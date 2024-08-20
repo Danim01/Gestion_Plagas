@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Bienvenido!</h1>
+  <main>
+    <BotonDiagnostico class="diagnostico"></BotonDiagnostico>
+    <BotonAlertas class="alertas"></BotonAlertas>
+    <BotonConfigurar></BotonConfigurar>
+    <BarraInferior></BarraInferior>
+  </main>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import BotonDiagnostico from "./components/BotonDiagnostico.vue"
+import BotonAlertas from "./components/BotonAlertas.vue"
+import BotonConfigurar from "./components/BotonConfigurar.vue"
+import BarraInferior from "./components/BarraInferior.vue"
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 </style>

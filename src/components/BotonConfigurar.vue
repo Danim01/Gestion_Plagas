@@ -1,0 +1,35 @@
+<template>
+    <div>
+        <button class="tarjeta">
+            <p>Configurar Alertas</p>
+        </button>
+    </div>
+</template>
+
+<script>
+
+</script>
+
+<style scoped>
+    div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .tarjeta {
+        background-color: #588157;
+        width: 500px;
+        height: 250px;
+        border: 0;
+        color: white;
+        padding: 30px 25px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+    }
+</style>
